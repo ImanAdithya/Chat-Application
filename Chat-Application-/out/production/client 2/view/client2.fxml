@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="695.0" prefWidth="881.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Client2Controller">
+   <children>
+      <TextField fx:id="txtClient2Name" layoutX="360.0" layoutY="22.0" />
+      <Button layoutX="579.0" layoutY="22.0" mnemonicParsing="false" onAction="#onActionNameSave" prefHeight="27.0" prefWidth="95.0" text="NAME" />
+      <TextArea fx:id="txtAreaClient2" layoutX="6.0" layoutY="82.0" prefHeight="428.0" prefWidth="271.0" />
+      <TextField fx:id="txtMassageClient2" layoutX="14.0" layoutY="523.0" prefHeight="27.0" prefWidth="818.0" />
+      <Button layoutX="308.0" layoutY="578.0" mnemonicParsing="false" onAction="#onActionSend" prefHeight="27.0" prefWidth="231.0" text="SEND" />
+      <ScrollPane layoutX="282.0" layoutY="84.0" prefHeight="428.0" prefWidth="550.0">
+         <content>
+            <VBox fx:id="vbox" prefHeight="425.0" prefWidth="535.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9a8e18e1-80ba-4def-942e-379e48906d34" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chat application.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client 1/client 1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client 1/client 1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client 1/src/controller/Client1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/client 1/src/controller/Client1Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client 1/src/controller/Clinet1LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client 1/src/controller/Clinet1LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client 1/src/view/client1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client 1/src/view/client1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client 2/client 2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client 2/client 2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client 2/src/controller/Client2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/client 2/src/controller/Client2Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client 2/src/controller/Client2LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client 2/src/controller/Client2LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client 3/client 3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client 3/client 3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client 3/src/controller/Client3Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/client 3/src/controller/Client3Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client 3/src/controller/Client3LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client 3/src/controller/Client3LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client 3/src/view/client3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client 3/src/view/client3.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client 1/controller/Client1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client 1/controller/Client1Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client 1/controller/Clinet1LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client 1/controller/Clinet1LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client 1/view/client1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client 1/view/client1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Server.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Qoh30JvbUSL4acAAL3fLXCly9W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "openjdk-19",
+    "last_opened_file_path": "/Users/imanadithya/Software Engineering/IJSE/2 SEMESTER/Network/Netowok Chat App/chat application",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client 3/src/view" />
+      <recent name="$PROJECT_DIR$/client 3/src" />
+      <recent name="$PROJECT_DIR$/client 2/src/view" />
+      <recent name="$PROJECT_DIR$/client 1/src/lib" />
+      <recent name="$PROJECT_DIR$/client 1/src/view/assets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.AppInitializer">
+    <configuration name="AppInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AppInitializer" />
+      <module name="client 1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Appinitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Appinitializer" />
+      <module name="client 2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Applinitilalizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Applinitilalizer" />
+      <module name="client 3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Server" />
+      <module name="server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.AppInitializer" />
+      <item itemvalue="Application.Appinitializer" />
+      <item itemvalue="Application.Applinitilalizer" />
+      <item itemvalue="Application.Server" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AppInitializer" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.Appinitializer" />
+        <item itemvalue="Application.Applinitilalizer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9a8e18e1-80ba-4def-942e-379e48906d34" name="Changes" comment="" />
+      <created>1686025641014</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686025641014</updated>
+      <workItem from="1686025642968" duration="10511000" />
+      <workItem from="1686147745036" duration="983000" />
+      <workItem from="1686198396821" duration="15861000" />
+      <workItem from="1686224113135" duration="2310000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/client 1/src/AppInitializer.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history />
+    <find-history />
+  </component>
+</project>
