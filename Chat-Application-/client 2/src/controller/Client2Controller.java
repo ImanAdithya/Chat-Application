@@ -150,4 +150,6 @@ public class Client2Controller {
 
         }
 
+    public void onActionNameSave(ActionEvent actionEvent) {
+    }
 }

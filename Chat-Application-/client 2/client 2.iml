@@ -7,7 +7,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="jfoenix-8.0.7" level="project" />
-    <orderEntry type="library" name="jfoenix-8.0.71" level="project" />
+    <orderEntry type="library" name="jfoenix-8.0.7" level="project" />
   </component>
 </module>
