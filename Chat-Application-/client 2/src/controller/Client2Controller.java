@@ -1,5 +1,6 @@
 package controller;
 
+import com.jfoenix.controls.JFXTextField;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.geometry.HPos;
@@ -23,8 +24,10 @@ import java.net.Socket;
 public class Client2Controller {
     public TextField txtClient2Name;
     public TextArea txtAreaClient2;
-    public TextField txtMassageClient2;
+    //public TextField txtMassageClient2;
     public VBox vbox;
+    public Label lblName;
+    public JFXTextField txtMassageSend;
     DataOutputStream dataOutputStream;
     DataInputStream dataInputStream;
     Socket socket;
@@ -34,6 +37,7 @@ public class Client2Controller {
      String sendMassage;
 
     public  void initialize(){
+        lblName.setText (Client2LoginController.userName);
         new Thread (()->{
             try {
                  socket=new Socket ("localhost",8006);
@@ -45,8 +49,6 @@ public class Client2Controller {
 
                 while(!massage.equals ("finished")){
                     massage=dataInputStream.readUTF ();
-                    txtAreaClient2.appendText ("\n"+massage.trim ());
-                    /*===================================*/
 
                     Platform.runLater (()->{
 
@@ -94,7 +96,30 @@ public class Client2Controller {
 
     public void onActionSend(ActionEvent actionEvent) throws IOException {
         //dataOutputStream=new DataOutputStream (socket.getOutputStream ());
-        sendMassage=txtMassageClient2.getText ();
+
+    }
+    public void setMassange(String massage){
+            if (sendMassage.equals (massage)){
+                Platform.runLater (()->{
+                    HBox hBox=new HBox();
+                    hBox.setAlignment(Pos.CENTER_LEFT);
+
+                    Text text=new Text(massage);
+                    TextFlow textFlow=new TextFlow(text);
+
+                    textFlow.setMaxWidth(130);
+
+                    hBox.getChildren().add(textFlow);
+                    vbox.getChildren().add(hBox);
+                });
+            }
+
+
+        }
+
+
+    public void sendMassageOnActopn(ActionEvent actionEvent) throws IOException {
+        sendMassage=txtMassageSend.getText ();
 
 
         Platform.runLater (()->{
@@ -126,30 +151,9 @@ public class Client2Controller {
         });
 
 
-        dataOutputStream.writeUTF (txtMassageClient2.getText ());
+        dataOutputStream.writeUTF (txtMassageSend.getText ());
         dataOutputStream.flush ();
-        txtMassageClient2.clear ();
+        txtMassageSend.clear ();
 
-    }
-    public void setMassange(String massage){
-            if (sendMassage.equals (massage)){
-                Platform.runLater (()->{
-                    HBox hBox=new HBox();
-                    hBox.setAlignment(Pos.CENTER_LEFT);
-
-                    Text text=new Text(massage);
-                    TextFlow textFlow=new TextFlow(text);
-
-                    textFlow.setMaxWidth(130);
-
-                    hBox.getChildren().add(textFlow);
-                    vbox.getChildren().add(hBox);
-                });
-            }
-
-
-        }
-
-    public void onActionNameSave(ActionEvent actionEvent) {
     }
 }

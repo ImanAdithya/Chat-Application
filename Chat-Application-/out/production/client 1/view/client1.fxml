@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="681.0" prefWidth="574.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Client1Controller">
+<AnchorPane prefHeight="731.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Client1Controller">
    <children>
-      <TextField fx:id="txtclientMassage" layoutX="123.0" layoutY="530.0" prefHeight="27.0" prefWidth="296.0" style="-fx-border-radius: 30px; -fx-background-radius: 20;" />
-      <Button layoutX="158.0" layoutY="575.0" mnemonicParsing="false" onAction="#onActionSend" prefHeight="27.0" prefWidth="212.0" text="SEND" />
-      <ScrollPane layoutX="39.0" layoutY="45.0" prefHeight="463.0" prefWidth="497.0">
-         <content>
-            <VBox fx:id="vBox" prefHeight="461.0" prefWidth="485.0" />
-         </content>
-      </ScrollPane>
-      <Button layoutX="383.0" layoutY="575.0" mnemonicParsing="false" onAction="#onActionFile" prefHeight="27.0" prefWidth="58.0" text="FIle" />
+      <ScrollPane layoutX="2.0" layoutY="47.0" prefHeight="614.0" prefWidth="409.0" />
+      <ImageView fitHeight="730.0" fitWidth="416.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/chatPage.jpg" />
+         </image>
+      </ImageView>
+      <VBox fx:id="vBox" layoutX="4.0" layoutY="50.0" prefHeight="612.0" prefWidth="395.0" />
+      <JFXTextField fx:id="txtMassage" layoutX="86.0" layoutY="676.0" prefHeight="27.0" prefWidth="247.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="349.0" layoutY="676.0" onAction="#onActionSendMassage" opacity="0.0" prefHeight="29.0" prefWidth="47.0" />
+      <Label fx:id="lblName" layoutX="57.0" layoutY="14.0" prefHeight="23.0" prefWidth="99.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

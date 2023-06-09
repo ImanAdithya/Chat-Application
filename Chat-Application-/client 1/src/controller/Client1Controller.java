@@ -27,9 +27,12 @@ import java.util.Scanner;
 
 public class Client1Controller {
     public TextField client1Name;
-    public TextField txtclientMassage;
+   // public TextField txtclientMassage;
     public TextArea txtAreaClient1;
     public VBox vBox;
+    public JFXTextField txtMassage;
+    public TextField txtclientMassage;
+    public Label lblName;
     DataOutputStream dataOutputStream;
     DataInputStream dataInputStream;
     Socket socket;
@@ -45,6 +48,7 @@ public class Client1Controller {
     }
 
     public  void initialize(){
+        lblName.setText (Clinet1LoginController.userName);
         new Thread (()->{
             try {
 
@@ -105,7 +109,14 @@ public class Client1Controller {
     }
 
     public void onActionSend(ActionEvent actionEvent) throws IOException {
-        sendMassage=txtclientMassage.getText ();
+
+    }
+
+
+
+
+    public void onActionSendMassage(ActionEvent actionEvent) throws IOException {
+        sendMassage=txtMassage.getText ();
 
         Platform.runLater (()->{
 
@@ -135,12 +146,8 @@ public class Client1Controller {
         });
 
 
-        dataOutputStream.writeUTF (txtclientMassage.getText ());
+        dataOutputStream.writeUTF (txtMassage.getText ());
         dataOutputStream.flush ();
 
-    }
-
-
-    public void onActionFile(ActionEvent actionEvent) {
     }
 }
