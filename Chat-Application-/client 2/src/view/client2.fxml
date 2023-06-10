@@ -12,7 +12,6 @@
 
 <AnchorPane prefHeight="731.0" prefWidth="407.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Client2Controller">
    <children>
-      <ScrollPane layoutY="47.0" prefHeight="617.0" prefWidth="417.0" />
       <ImageView fitHeight="731.0" fitWidth="417.0" pickOnBounds="true">
          <image>
             <Image url="@assets/chatPage.jpg" />
@@ -24,11 +23,15 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <VBox fx:id="vbox" layoutX="1.0" layoutY="52.0" prefHeight="610.0" prefWidth="403.0" />
       <JFXTextField fx:id="txtMassageSend" layoutX="86.0" layoutY="676.0" prefHeight="23.0" prefWidth="246.0">
          <font>
             <Font size="16.0" />
          </font>
       </JFXTextField>
+      <ScrollPane layoutX="-1.0" layoutY="48.0" prefHeight="615.0" prefWidth="417.0">
+         <content>
+            <VBox fx:id="vBox2" prefHeight="610.0" prefWidth="409.0" style="-fx-background-color: #DEF5FC;" />
+         </content>
+      </ScrollPane>
    </children>
 </AnchorPane>

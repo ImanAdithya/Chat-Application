@@ -15,7 +15,6 @@ public class Clinet1LoginController {
 
     static String userName;
     public AnchorPane contextPane;
-    DataOutputStream dataOutputStream;
 
     public void onActionLOgin(ActionEvent actionEvent) throws IOException {
 

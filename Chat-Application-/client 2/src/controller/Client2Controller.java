@@ -28,6 +28,7 @@ public class Client2Controller {
     public VBox vbox;
     public Label lblName;
     public JFXTextField txtMassageSend;
+    public VBox vBox2;
     DataOutputStream dataOutputStream;
     DataInputStream dataInputStream;
     Socket socket;
@@ -74,7 +75,7 @@ public class Client2Controller {
                         gridPane.setAlignment (Pos.CENTER_LEFT);
 
                         root.getChildren ().add(gridPane);
-                        vbox.getChildren ().add(gridPane);
+                        vBox2.getChildren ().add(gridPane);
 
                     });
 
@@ -146,7 +147,7 @@ public class Client2Controller {
             gridPane.setAlignment (Pos.CENTER_RIGHT);
 
             root.getChildren ().add(gridPane);
-            vbox.getChildren ().add(gridPane);
+            vBox2.getChildren ().add(gridPane);
 
         });
 

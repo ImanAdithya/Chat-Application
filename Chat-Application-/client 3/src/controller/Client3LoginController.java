@@ -14,6 +14,7 @@ public class Client3LoginController {
     public AnchorPane contextPane;
 
     static String userName;
+    public AnchorPane LoginContext;
 
     public void onActionLOgin(ActionEvent actionEvent) throws IOException {
 
@@ -22,9 +23,9 @@ public class Client3LoginController {
         Stage stage3 = new Stage();
         stage3.setScene(new Scene (FXMLLoader.load(getClass().getResource("/view/client3.fxml"))));
         stage3.show();
-
-        Stage stage4 = (Stage) contextPane.getScene().getWindow();
+        Stage stage4 = (Stage) LoginContext.getScene().getWindow();
         stage4.close();
+
 
     }
 }
