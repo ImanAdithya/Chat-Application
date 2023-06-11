@@ -91,12 +91,35 @@ public class Client3Controller {
 
     private void setImage(String massage) {
         Platform.runLater (() ->{
-            ImageView imageView = new ImageView (new Image (massage));
+            //
 
             String[] paths = massage.split ("`");
             System.out.println (paths[1]);
 
+            //ImageView imageView = new ImageView (new Image (paths[1]));
+
+            Image image1 = new Image (paths[1], 100, 300, true, true);
+            ImageView image = new ImageView (image1);
+            final Group root = new Group ();
+
+            final GridPane gridpane = new GridPane ();
+            gridpane.setPadding (new Insets (5));
+            gridpane.setHgap (10);
+            gridpane.setVgap (10);
+            gridpane.minHeight (30);
+            gridpane.maxHeight (200);
+
+
+            GridPane.setHalignment (image, HPos.CENTER);
+            gridpane.add (image, 0, 0);
+            gridpane.setAlignment (Pos.CENTER_LEFT);
+
+            root.getChildren ().add (gridpane);
+
+            vBox2.getChildren ().add (gridpane);
+
         });
+
     }
 
     void setMessage(String msg){

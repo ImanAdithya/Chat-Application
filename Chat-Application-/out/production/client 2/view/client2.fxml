@@ -33,5 +33,6 @@
             <VBox fx:id="vBox2" prefHeight="610.0" prefWidth="414.0" style="-fx-background-color: #DEF5FC;" />
          </content>
       </ScrollPane>
+      <JFXButton layoutX="14.0" layoutY="679.0" onAction="#onActionSendImage" opacity="0.0" prefHeight="27.0" prefWidth="23.0" />
    </children>
 </AnchorPane>

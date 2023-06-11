@@ -18,9 +18,12 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
+import java.io.File;
 import java.io.IOException;
 import java.net.Socket;
 
@@ -131,7 +134,7 @@ public class Client2Controller {
 
             GridPane.setHalignment (image, HPos.CENTER);
             gridpane.add (image, 0, 0);
-            gridpane.setAlignment (Pos.CENTER_RIGHT);
+            gridpane.setAlignment (Pos.CENTER_LEFT);
 
             root.getChildren ().add (gridpane);
 
@@ -208,5 +211,40 @@ public class Client2Controller {
         dataOutputStream.flush ();
         txtMassageSend.clear ();
 
+    }
+
+    public void onActionSendImage(ActionEvent actionEvent) throws IOException {
+        FileChooser chooser = new FileChooser ();
+        File file = chooser.showOpenDialog (new Stage ());
+        if (file != null) {
+
+            String path = file.toURI ().toString ();
+            System.out.println (path);
+
+            System.out.println (file.getPath ());
+            Image image1 = new Image (path, 100, 300, true, true);
+            ImageView image = new ImageView (image1);
+            final Group root = new Group ();
+
+            final GridPane gridpane = new GridPane ();
+            gridpane.setPadding (new Insets (5));
+            gridpane.setHgap (10);
+            gridpane.setVgap (10);
+            gridpane.minHeight (30);
+            gridpane.maxHeight (200);
+
+
+            GridPane.setHalignment (image, HPos.CENTER);
+            gridpane.add (image, 0, 0);
+            gridpane.setAlignment (Pos.CENTER_RIGHT);
+
+            root.getChildren ().add (gridpane);
+
+            vBox2.getChildren ().add (gridpane);
+
+
+            dataOutputStream.writeUTF ("img`" + path);
+            dataOutputStream.flush ();
+        }
     }
 }
