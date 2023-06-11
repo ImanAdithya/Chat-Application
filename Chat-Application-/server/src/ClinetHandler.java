@@ -30,12 +30,15 @@ public class ClinetHandler extends Thread{
                     System.out.println("Chat Closed");
                     break;
                 }
+                if (message.startsWith ("img")){
 
-                String received=this.name+" : "+message;
+                    Server.broadcastMessage(message,this.name);
 
-                System.out.println();
+                }else {
+                    String received=this.name+" : "+message;
+                    Server.broadcastMessage(received,this.name);
+                }
 
-                Server.broadcastMessage(received,this.name);
 
             }
             clientSocket.close();

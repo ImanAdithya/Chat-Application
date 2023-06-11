@@ -9,13 +9,13 @@
 
 <AnchorPane fx:id="contextPane" prefHeight="601.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Client2LoginController">
    <children>
-      <ImageView fitHeight="602.0" fitWidth="352.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true">
+      <ImageView fitHeight="774.0" fitWidth="464.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true">
          <image>
             <Image url="@assets/chatLogin.jpg" />
          </image>
       </ImageView>
-      <JFXButton layoutX="76.0" layoutY="432.0" onAction="#onActionLOgin" prefHeight="33.0" prefWidth="197.0" style="-fx-background-color: #17c0eb; -fx-background-radius: 20;" text="LOGIN" textFill="WHITE" />
-      <JFXTextField fx:id="txtUserName" layoutX="106.0" layoutY="385.0" prefHeight="29.0" prefWidth="138.0" promptText="ENTER USER NAME">
+      <JFXButton layoutX="126.0" layoutY="585.0" onAction="#onActionLOgin" prefHeight="33.0" prefWidth="197.0" style="-fx-background-color: #17c0eb; -fx-background-radius: 20;" text="LOGIN" textFill="WHITE" />
+      <JFXTextField fx:id="txtUserName" layoutX="155.0" layoutY="538.0" prefHeight="29.0" prefWidth="138.0" promptText="ENTER USER NAME">
          <font>
             <Font size="15.0" />
          </font></JFXTextField>

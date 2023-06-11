@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="731.0" prefWidth="407.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Client2Controller">
+<AnchorPane prefHeight="731.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Client2Controller">
    <children>
       <ImageView fitHeight="731.0" fitWidth="417.0" pickOnBounds="true">
          <image>
@@ -28,9 +28,9 @@
             <Font size="16.0" />
          </font>
       </JFXTextField>
-      <ScrollPane layoutX="-1.0" layoutY="48.0" prefHeight="615.0" prefWidth="417.0">
+      <ScrollPane fx:id="scrollPaneID" layoutX="-1.0" layoutY="48.0" prefHeight="615.0" prefWidth="417.0">
          <content>
-            <VBox fx:id="vBox2" prefHeight="610.0" prefWidth="409.0" style="-fx-background-color: #DEF5FC;" />
+            <VBox fx:id="vBox2" prefHeight="610.0" prefWidth="414.0" style="-fx-background-color: #DEF5FC;" />
          </content>
       </ScrollPane>
    </children>

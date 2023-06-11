@@ -9,6 +9,7 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Group;
 import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
@@ -33,6 +34,8 @@ public class Client1Controller {
     public JFXTextField txtMassage;
     public TextField txtclientMassage;
     public Label lblName;
+    public VBox vBox2;
+    public ScrollPane scrollPaneId;
     DataOutputStream dataOutputStream;
     DataInputStream dataInputStream;
     Socket socket;
@@ -49,10 +52,12 @@ public class Client1Controller {
 
     public  void initialize(){
         lblName.setText (Clinet1LoginController.userName);
+        scrollPaneId.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+        scrollPaneId.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         new Thread (()->{
             try {
 
-                 socket=new Socket ("localhost",8006);
+                 socket=new Socket ("localhost",8007);
                  dataOutputStream=new DataOutputStream (socket.getOutputStream ());
                  dataInputStream=new DataInputStream (socket.getInputStream ());
 
@@ -87,7 +92,7 @@ public class Client1Controller {
                         gridPane.setAlignment (Pos.CENTER_LEFT);
 
                         root.getChildren ().add(gridPane);
-                        vBox.getChildren ().add(gridPane);
+                        vBox2.getChildren ().add(gridPane);
 
                     });
 
@@ -141,13 +146,14 @@ public class Client1Controller {
             gridPane.setAlignment (Pos.CENTER_RIGHT);
 
             root.getChildren ().add(gridPane);
-            vBox.getChildren ().add(gridPane);
+            vBox2.getChildren ().add(gridPane);
 
         });
 
 
         dataOutputStream.writeUTF (txtMassage.getText ());
         dataOutputStream.flush ();
+        txtMassage.clear ();
 
     }
 }

@@ -13,7 +13,7 @@ public class Server {
 
     public static void main(String[] args) {
         try {
-            ServerSocket serverSocket=new ServerSocket (8006);
+            ServerSocket serverSocket=new ServerSocket (8007);
 
             for (int i = 0; i < 5; i++) {
                 Socket socket = serverSocket.accept();
